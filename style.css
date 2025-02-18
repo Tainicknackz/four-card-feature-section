@@ -1,0 +1,159 @@
+/* Importing fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+/* Global Reset & Base Styling */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Media Query for 375px screens */
+.ctn {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.header__ctn {
+  padding: 3em 0;
+}
+
+.header__name,
+.header__text {
+  text-align: center;
+}
+
+.header__name {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+
+.header__name strong {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.header__text {
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-top: 1em;
+  color: hsl(229, 6%, 66%);
+}
+
+.box__ctn {
+  margin-bottom: 3em;
+}
+
+.box__item {
+  margin: 1.85em 0;
+  padding: 1.5em;
+  background: hsl(0, 0%, 100%, 0.5);
+}
+
+.box__cyan,
+.box__red,
+.box__orange,
+.box__blue {
+  border-radius: 0.25em;
+}
+
+.box__cyan {
+  border-top: 2px solid hsl(180, 62%, 55%);
+  box-shadow: 0 2px 4px hsl(180, 62%, 55%, 0.15),
+    0 8px 12px -4px hsl(180, 62%, 55%, 0.2);
+}
+
+.box__red {
+  border-top: 2px solid hsl(0, 78%, 62%);
+  box-shadow: 0 2px 4px hsl(0, 78%, 62%, 0.15),
+    0 8px 12px -4px hsl(0, 78%, 62%, 0.2);
+}
+
+.box__orange {
+  border-top: 2px solid hsl(34, 97%, 64%);
+  box-shadow: 0 2px 4px hsl(34, 97%, 64%, 0.15),
+    0 8px 12px -4px hsl(34, 97%, 64%, 0.2);
+}
+
+.box__blue {
+  border-top: 2px solid hsl(212, 86%, 64%);
+  box-shadow: 0 2px 4px hsl(212, 86%, 64%, 0.15),
+    0 8px 12px -4px hsl(212, 86%, 64%, 0.2);
+}
+
+.box__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.box__img {
+  margin: 1.85em 0 1em 0;
+  align-self: flex-end;
+}
+
+.box__header {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  color: hsl(234, 12%, 34%);
+}
+
+.box__text {
+  font-size: 0.89em;
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+}
+
+
+/* Media Query for 1440px */
+@media (min-width: 1200px) {
+  .header__ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__name {
+    font-size: 2.2rem;
+  }
+
+  .header__text {
+    width: 550px;
+  }
+
+  .box__ctn {
+    display: flex;
+    gap: 1.75rem;
+    justify-content: center;
+  }
+
+  .box__item {
+    width: 320px;
+  }
+
+  .box__item.box__cyan {
+    align-self: center;
+  }
+
+  .box__item.box__blue {
+    align-self: center;
+  }
+
+  .box__header {
+    font-size: 1.2rem;
+  }
+}
